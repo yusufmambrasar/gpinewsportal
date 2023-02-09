@@ -138,19 +138,11 @@ export default defineComponent({
     data: () => ({
         selectedItem: 0,
         isShowNews: false,
-        items: [
-            { text: 'Mision', icon: 'mdi-clock', total: 5, slug: "Mision" },
-            { text: 'Ibadah', icon: 'mdi-account', total: 10, slug: "Ibadah" },
-            { text: 'Pelayanan', icon: 'mdi-flag', total: 10, slug: "Pelayanan" },
-            { text: 'Traning', icon: 'mdi-flag', total: 12, slug: "Traning" },
-            { text: 'Sinode', icon: 'mdi-flag', total: 3, slug: "Sinode" },
-            { text: 'Cabang', icon: 'mdi-flag', total: 7, slug: "Cabang" },
-        ],
         listData: [
             {
                 id: "23453",
-                category: "Mision",
-                slugCategory: "Penginjilan",
+                category: "Misi",
+                slugCategory: "misi",
                 slugTitle: "Penginjilan",
                 title: "Penginjilan di tempat baru, 2021",
                 date: "5 Menit yang lalu",
@@ -159,7 +151,7 @@ export default defineComponent({
             {
                 id: "2366",
                 category: "Ibadah",
-                slugCategory: "Ibadah Natal",
+                slugCategory: "ibadah",
                 slugTitle: "Ibadah Natal",
                 title: "Ibadah Natal, jakarta timur 2022",
                 date: "8 jam yang lalu",
@@ -168,7 +160,7 @@ export default defineComponent({
             {
                 id: "2553",
                 category: "Pelayanan",
-                slugCategory: "Pelayanan Diakonia",
+                slugCategory: "pelayanan",
                 slugTitle: "Pelayanan Diakonia - kepada sesama saling mendoakan",
                 title: "Pelayanan Diakonia-mendoakan yang sakit",
                 date: "5 Feb 2023",
@@ -177,7 +169,7 @@ export default defineComponent({
             {
                 id: "23499",
                 category: "Traning",
-                slugCategory: "Traning Hamba Hamba Tuhan",
+                slugCategory: "traning",
                 slugTitle: "Traning Hamba Hamba Tuhan",
                 title: "Traning Hamba Hamba Tuhan yang telah di mulai sejak 1978 oleh Ps.Stube",
                 date: "25 Sep 2022",
@@ -186,7 +178,7 @@ export default defineComponent({
             {
                 id: "2888",
                 category: "Sinode",
-                slugCategory: "Peresmian Kantor dan Gereja di lawang",
+                slugCategory: "sinode",
                 slugTitle: "Peresmian Kantor dan Gereja di Lawang",
                 title: "Peresmian Kantor dan Gereja di Lawang dan sebagai pusat Gereja GPI JS ",
                 date: "25 Sep 2006",
@@ -194,12 +186,21 @@ export default defineComponent({
             },
             {
                 id: "2345",
-                category: "Cabang",
-                slugCategory: "Peresmian kantor dan gereja GPI JS Cabang Papua - Jayawijaya",
+                category: "Cabang Gereja",
+                slugCategory: "cabang-gereja",
                 slugTitle: "Peresmian kantor dan gereja GPI JS Cabang Papua - Jayawijaya",
                 title: "Peresmian kantor dan gereja GPI JS Cabang Papua - Jayawijaya",
                 date: "10 Sep 2022",
                 source: "peresmian.jpeg"
+            }, 
+            {
+                id: "2345",
+                category: "Cabang Gereja",
+                slugCategory: "cabang-gereja",
+                slugTitle: "Peresmian kantor dan gereja GPI JS Cabang Papua - jayapura",
+                title: "Peresmian kantor dan gereja GPI JS Cabang Papua - Jayapura",
+                date: "10 Sep 2022",
+                source: "cabang.jpg"
             }
 
         ],

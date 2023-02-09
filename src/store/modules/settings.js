@@ -57,7 +57,7 @@ const state = {
     },
     menu: {
         topLeft: [{
-            name: "Jadwal Ibadah",
+            name: "Cabang Gereja",
             path: "/jadwal",
             icon: "mdi-book-open-variant",
             outlined: false

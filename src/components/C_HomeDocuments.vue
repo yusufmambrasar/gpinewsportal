@@ -16,7 +16,7 @@
             </v-col>
         </v-row>
         <v-row>
-            <v-col md="3" v-for="image in listDocuments">
+            <v-col md="4" v-for="image in listDocuments">
                 <v-flex xs12>
                     <router-link :to="'/informasi/detail/' + image.subtitle" class="text-decoration-none">
                         <v-hover v-slot="{ hover }" open-delay="200">

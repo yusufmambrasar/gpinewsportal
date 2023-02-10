@@ -24,7 +24,7 @@
                             <v-card :elevation="hover ? 18 : 1" :class="{ 'on-hover': hover }">
                                 <v-container fluid grid-list-lg>
                                     <v-layout row>
-                                        <v-flex xs5>
+                                        <v-flex xs7>
                                             <v-img :src="require(`../assets/${item.img}`)" width="300"
                                                 :height="settings.defaultImageSmallContentHeight"
                                                 :lazy-src="require(`../assets/${item.img}`)"
@@ -37,7 +37,7 @@
                                                 </template>
                                             </v-img>
                                         </v-flex>
-                                        <v-flex xs7>
+                                        <v-flex xs5>
                                             <div>
 
                                                 <h2 class="font-weight-medium grey--text">

@@ -17,40 +17,33 @@
             </v-col>
             <v-col cols="12">
                 <v-row>
-                    <v-col md="4" v-show="isShowNews" v-for="item in listData"> 
-                            <v-flex xs12>
-                                <v-hover v-slot="{ hover }" open-delay="200">
-                                    <router-link :to="'/informasi/detail/' + item.slugTitle"
-                                        class="text-decoration-none">
-                                        <v-card :elevation="hover ? 5 : 1" :class="{ 'on-hover': hover }">
-                                            <v-container fluid grid-list-lg>
-                                                <v-layout row>
-                                                    <v-flex xs5>
-
-                                                        <v-img :src="require(`../assets/${item.img}`)" width="300"
-                                                            :height="settings.defaultImageSmallContentHeight"
-                                                            class="rounded-lg">
-                                                        </v-img>
-                                                    </v-flex>
-                                                    <v-flex xs7>
-                                                        <div>
-                                                            <div class="subheading font-weight-medium">
-                                                                {{ item.title }}
-                                                            </div>
-                                                            <h5 class="float-left font-weight-regular my-2">
-                                                                <v-chip class="ma-2" small outlined
-                                                                    :color="settings.color">
-                                                                    {{ item.category }}
-                                                                </v-chip> {{ item.date }}
-                                                            </h5>
-                                                        </div>
-                                                    </v-flex>
-                                                </v-layout>
-                                            </v-container>
-                                        </v-card>
-                                    </router-link>
-                                </v-hover>
-                            </v-flex> 
+                    <v-col md="4" v-show="isShowNews" v-for="item in listData">
+                        <v-flex xs12>
+                            <v-hover v-slot="{ hover }" open-delay="200">
+                                <router-link :to="'/informasi/detail/' + item.slugTitle" class="text-decoration-none">
+                                    <v-card :elevation="hover ? 5 : 1" :class="{ 'on-hover': hover }">
+                                        <v-container fluid grid-list-lg>
+                                            <v-layout row>
+                                                <v-img :src="require(`../assets/${item.img}`)"
+                                                    :height="settings.defaultImageSmallContentHeight"
+                                                    class="rounded-lg">
+                                                </v-img>
+                                                <div class="mt-2">
+                                                    <div class="subheading font-weight-medium">
+                                                        {{ item.title }}
+                                                    </div>
+                                                    <h5 class="float-left font-weight-regular my-2">
+                                                        <v-chip class="ma-2" small outlined :color="settings.color">
+                                                            {{ item.category }}
+                                                        </v-chip> {{ item.date }}
+                                                    </h5>
+                                                </div>
+                                            </v-layout>
+                                        </v-container>
+                                    </v-card>
+                                </router-link>
+                            </v-hover>
+                        </v-flex>
                     </v-col>
                 </v-row>
             </v-col>
@@ -89,7 +82,7 @@ export default {
                 slugTitle: "ibadah-natal-2022",
                 title: "Ibadah Natal 2022 di lawang",
                 date: "8 jam yang lalu",
-                img:"natal.jpg"
+                img: "natal.jpg"
             },
             {
                 id: "2553",
@@ -98,7 +91,7 @@ export default {
                 slugTitle: "Pelayanan Diakonia kepada sesama",
                 title: "Pelayanan Diakonia kepada sesama 20 Sep 2022",
                 date: "25 Sep 2022",
-                img:"pelayanandiakonia.jpg"
+                img: "pelayanandiakonia.jpg"
             },
             {
                 id: "23499",
@@ -107,7 +100,7 @@ export default {
                 slugTitle: "Traning Hamba Hamba Tuhan, dimulai 1978",
                 title: "Traning Hamba Hamba Tuhan, dimulai 1978",
                 date: "25 Sep 2022",
-                img:"belajar.jpg"
+                img: "belajar.jpg"
             },
             {
                 id: "2888",
@@ -116,7 +109,7 @@ export default {
                 slugTitle: "cabang cabang GPI Jalan Suci di seluruh nusantara",
                 title: "cabang cabang GPI Jalan Suci",
                 date: "25 Sep 2022",
-                img:"indonesia.jpg"
+                img: "indonesia.jpg"
             },
             {
                 id: "2345",
@@ -124,8 +117,8 @@ export default {
                 slugCategory: "Peresmian Gedung Sinode",
                 slugTitle: "Peresmian Gereja Pekabaran Injil Jalan Suci pusat",
                 title: "Peresmian Gereja Pekabaran Injil Jalan Suci pusat di lawang",
-                date: "25 Sep 2022", 
-                img:"sinode.jpg"
+                date: "25 Sep 2022",
+                img: "sinode.jpg"
             }
         ]
     }),

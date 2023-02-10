@@ -1,6 +1,6 @@
 <template >
   <v-container>
-    <v-parallax height="1000" src="../assets/welcome1.jpg">
+    <v-parallax height="300" src="../assets/welcome1.jpg">
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">
           <h1 class="text-h3 mb-4">

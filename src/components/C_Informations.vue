@@ -143,7 +143,7 @@ export default defineComponent({
                 id: "23453",
                 category: "Misi",
                 slugCategory: "misi",
-                slugTitle: "Penginjilan",
+                slugTitle: "misi",
                 title: "Penginjilan di tempat baru, 2021",
                 date: "5 Menit yang lalu",
                 source: "penginjilan.jpg"
@@ -152,7 +152,7 @@ export default defineComponent({
                 id: "2366",
                 category: "Ibadah",
                 slugCategory: "ibadah",
-                slugTitle: "Ibadah Natal",
+                slugTitle: "ibadah-natal",
                 title: "Ibadah Natal, jakarta timur 2022",
                 date: "8 jam yang lalu",
                 source: "natal.jpg"
@@ -162,7 +162,7 @@ export default defineComponent({
                 category: "Pelayanan",
                 slugCategory: "pelayanan",
                 slugTitle: "Pelayanan Diakonia - kepada sesama saling mendoakan",
-                title: "Pelayanan Diakonia-mendoakan yang sakit",
+                title: "pelayanan-diakonia-mendoakan-yang-sakit",
                 date: "10 Jam yang lalu",
                 source: "pelayanandiakonia.jpg"
             },
@@ -171,7 +171,7 @@ export default defineComponent({
                 category: "Traning",
                 slugCategory: "traning",
                 slugTitle: "Traning Hamba Hamba Tuhan",
-                title: "Traning Hamba Hamba Tuhan yang telah di mulai sejak 1978 oleh Ps.Stube",
+                title: "Traning Hamba Hamba Tuhan yang telah dimulai sejak 1978 oleh Ps.Stube",
                 date: "25 Sep 2022",
                 source: "belajar.jpg"
             },
@@ -192,7 +192,7 @@ export default defineComponent({
                 title: "Peresmian kantor dan gereja GPI JS Cabang Papua - Jayawijaya",
                 date: "9 jan 2023",
                 source: "peresmian.jpeg"
-            }, 
+            },
             {
                 id: "2345",
                 category: "Cabang Gereja",
@@ -201,7 +201,7 @@ export default defineComponent({
                 title: "Peresmian kantor dan gereja GPI JS Jayapura",
                 date: "8 Jan 2023",
                 source: "cabang.jpg"
-            }, 
+            },
             {
                 id: "2345",
                 category: "PPS",
@@ -210,7 +210,7 @@ export default defineComponent({
                 title: "Doa awal tahun bersama dilawang",
                 date: "7 jan 2023",
                 source: "pps.jpg"
-            }, 
+            },
             {
                 id: "2345",
                 category: "kaum Wanita",
@@ -219,7 +219,7 @@ export default defineComponent({
                 title: "Pertemuan wanita dilawang",
                 date: "5 Jan 2023",
                 source: "kaumwanita.jpg"
-            } 
+            }
 
         ],
         datafiltering: [],

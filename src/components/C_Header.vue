@@ -135,7 +135,7 @@ export default {
             dialog: false,
             menu: {},
             styleData: {
-                small: false,
+                small: true,
                 rounded: true,
                 color: "grey darken-2"
             }

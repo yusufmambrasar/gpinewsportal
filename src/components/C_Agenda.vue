@@ -185,7 +185,7 @@ export default {
                 id: "2366",
                 category: "Pelayanan",
                 slugCategory: "pelayanan",
-                slugTitle: "pelayanan-mendoakan-jemaat-yang-sedang-sakit ",
+                slugTitle: "pelayanan-mendoakan-jemaat-yang-sedang-sakit",
                 title: "Pelayanan Mendoakan jemaat yang sedang Sakit dengan iman  Yesus Menyembuhkan",
                 datePublish: "1 jan 2023",
                 date: "06 Jan 2023",
@@ -234,7 +234,7 @@ export default {
                 date: "31 Jan 2023",
                 source: "mision.jpg"
 
-            }, 
+            },
             {
                 id: "2345",
                 category: "Api Menyala",
@@ -256,7 +256,7 @@ export default {
                 date: "01 november 2022",
                 source: "rakornas.jpg"
 
-            }, 
+            },
             {
                 id: "2345",
                 category: "Sinode",
@@ -278,7 +278,7 @@ export default {
                 date: "30 november 2022",
                 source: "bica.jpg"
 
-            }, 
+            },
             {
                 id: "2345",
                 category: "Kaum Wanita",
@@ -289,7 +289,7 @@ export default {
                 date: "22 Agustus 2022",
                 source: "kaumwanita.jpg"
 
-            }, 
+            },
             {
                 id: "2345",
                 category: "",
@@ -311,7 +311,7 @@ export default {
                 date: "21 januari 2022",
                 source: "pertemuanpengurus.jpg"
 
-            }, 
+            },
             {
                 id: "2345",
                 category: "Youth Camp",
@@ -322,7 +322,7 @@ export default {
                 date: "12 maret 2022",
                 source: "youthcamp.jpg"
 
-            }, 
+            },
             {
                 id: "2345",
                 category: "Ibadah",
@@ -333,7 +333,7 @@ export default {
                 date: "01 juni 2022",
                 source: "sundayschool.jpg"
 
-            }, 
+            },
             {
                 id: "2345",
                 category: "Traning",
@@ -344,7 +344,7 @@ export default {
                 date: "11 Agustus 2022",
                 source: "bukudanmajalah.jpg"
 
-            }, 
+            },
 
             {
                 id: "2345",
@@ -356,7 +356,7 @@ export default {
                 date: "11 november 2022",
                 source: "foto8.jpg"
 
-            }, 
+            },
 
             {
                 id: "2345",
@@ -368,10 +368,10 @@ export default {
                 date: "23 november 2022",
                 source: "foto3.jpg"
 
-            }, 
+            },
 
-            
-            
+
+
 
         ]
     }),

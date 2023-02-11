@@ -62,7 +62,7 @@
       </v-bottom-navigation>
     </div>
     <v-col class="text-center" cols="12">
-      {{ new Date().getFullYear() }} — <strong>GKI Lahai-Roi Mefkajim Ayamaru</strong>
+      {{ new Date().getFullYear() }} — <strong>GPI Jalan Suci Nasional</strong>
     </v-col>
   </v-footer>
 </template>

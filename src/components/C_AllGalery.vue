@@ -84,41 +84,87 @@ export default {
         datafiltering: [],
         isCategoryClicked: false,
         items: [
-            { text: 'Mision', icon: 'mdi-clock', total: 5, slug: "Mision" },
-            { text: 'Ibadah', icon: 'mdi-account', total: 10, slug: "Ibadah" },
-            { text: 'Pelayanan', icon: 'mdi-flag', total: 10, slug: "Pelayanan" },
-            { text: 'Traning', icon: 'mdi-flag', total: 12, slug: "Traning" },
-            { text: 'Sinode', icon: 'mdi-flag', total: 3, slug: "Sinode" },
-            { text: 'Cabang', icon: 'mdi-flag', total: 7, slug: "Cabang" },
+            { text: 'Misi', icon: 'mdi-clock', total: 5, slug: "misi" },
+            { text: 'Ibadah', icon: 'mdi-account', total: 10, slug: "ibadah" },
+            { text: 'Pelayanan', icon: 'mdi-flag', total: 10, slug: "pelayanan" },
+            { text: 'Traning', icon: 'mdi-flag', total: 12, slug: "traning" },
+            { text: 'Sinode', icon: 'mdi-flag', total: 3, slug: "sinode" },
+            { text: 'Cabang Gereja', icon: 'mdi-flag', total: 7, slug: "cabang-gereja" },
+            { text: 'Api Menyala', icon: 'mdi-flag', total: 7, slug: "api-menyala" },
+            { text: 'Rakornas', icon: 'mdi-flag', total: 7, slug: "rakornas" },
+            { text: 'Bica', icon: 'mdi-flag', total: 7, slug: "bica" },
+            { text: 'Kaum Wanita', icon: 'mdi-flag', total: 7, slug: "bica" },
+            { text: 'Persidangan Ilahi', icon: 'mdi-flag', total: 7, slug: "persidangan-ilahi" },
+            { text: 'Youth Camp', icon: 'mdi-flag', total: 7, slug: "youth-camp" }
         ],
         imagesList: [
             {
-                source: "penginjilan.jpg", category: "Mision", title: "Penginjilan", total: 15, date: "25 Sept 2022", slugTitle: "natal",
-                slugCategory: "Mision"
+                source: "penginjilan.jpg", category: "Misi", title: "Penginjilan", total: 15, date: "25 Sept 2022", slugTitle: "misi",
+                slugCategory: "misi"
             },
             {
-                source: "natal.jpg", category: "Natal", title: "Ibadah bersama 25 des 2022", total: 23, date: "15 Sept 2022",
-                slugCategory: "Ibadah",
-                slugTitle: "Ibadah"
+                source: "natal.jpg", category: "ibadah", title: "Ibadah bersama 25 des 2022", total: 23, date: "15 Sept 2022",
+                slugCategory: "ibadah",
+                slugTitle: "ibadah"
             },
             {
                 source: "pelayanandiakonia.jpg", category: "Pelayanan",
-                slugCategory: "Pelayanan",
+                slugCategory: "pelayanan",
                 title: "Saling mendoakan", total: 50, date: "6 Agus 2022", slugTitle: "pelayanan"
             },
             {
                 source: "bukudanmajalah.jpg", category: "Traning", title: "Program Sekolah Hamba Tuhan",
-                slugCategory: "Traning",
-                total: 14, date: "25 Des 2022", slugTitle: "Traning"
+                slugCategory: "traning",
+                total: 14, date: "25 Des 2022", slugTitle: "traning"
             },
             {
                 source: "sinode.jpg", category: "Sinode", title: "Sinode GPI Jalan Suci",
-                slugCategory: "Sinode Lawang", total: 20, date: "2 Sept 2022", slugTitle: "Sinode"
+                slugCategory: "sinode", total: 20, date: "2 Sept 2022", slugTitle: "sinode"
             },
             {
-                source: "cabang.jpg", category: "Cabang", title: "GPI Jalan suci Cabang atau daerah ",
-                slugCategory: "Cabang", total: 15, date: "8 Sept 2022", slugTitle: "Cabang"
+                source: "cabang.jpg", category: "Cabang Gereja", title: "GPI Jalan suci Cabang atau daerah ",
+                slugCategory: "cabang-gereja", total: 15, date: "8 Sept 2022", slugTitle: "cabang-gereja"
+            }, 
+            {
+                source: "rakornas.jpg", category: "Rakornas",
+                slugCategory: "rakornas",
+                title: "rapat kordinasi tiap tahun", total: 50, date: "6 Agus 2022", slugTitle: "rakornas"
+            },
+            {
+                source: "apimenyala.jpg", category: "Api Menyala", title: "Sinode Mengeluarkan Majalah Api Menyala",
+                slugCategory: "api-menyala",
+                total: 14, date: "25 Des 2022", slugTitle: "api-menyala"
+            },
+            {
+                source: "bica.jpg", category: "Bica", title: "Sinode GPI Jalan Suci melakukan BICA",
+                slugCategory: "bica", total: 20, date: "2 Sept 2022", slugTitle: "bica"
+            },
+            {
+                source: "pps.jpg", category: "PPS", title: "Pensyafaat melakukan doa",
+                slugCategory: "pps", total: 15, date: "8 Sept 2022", slugTitle: "pps"
+            }, 
+            {
+                source: "youthcamp.jpg", category: "Youth Camp", title: "Pemuda Melakukan Kegiatan Youth Camp",
+                slugCategory: "youth-camp", total: 15, date: "8 Sept 2022", slugTitle: "yaouth-camp"
+            }, 
+            {
+                source: "pertemuanpengurus.jpg", category: "Persidangan Ilahi", title: "Persidangan Ilahi di lakukan setiap tahun",
+                slugCategory: "persidangan-ilahi", total: 15, date: "8 Sept 2022", slugTitle: "persidangan-ilahi"
+            }, 
+            {
+                source: "kaumwanita.jpg", category: "Kaum Wanita", title: "Pertemuan Kaum Wanita di lawang 2020",
+                slugCategory: "kaum-wanita", total: 15, date: "8 Sept 2014", slugTitle: "kaum-wanita"
+            }, 
+            {
+                source: "bica.jpg", category: "Bica", title: "Bica, lawang 2018",
+                slugCategory: "bica", total: 15, date: "8 Sept 2018", slugTitle: "bica-lawang-2018"
+            }, 
+            {
+                source: "kaumwanita.jpg", category: "Kaum Wanita", title: "Pertemuan Kaum Wanita di lawang 2010",
+                slugCategory: "kaum-wanita", total: 15, date: "8 Sept 2010", slugTitle: "kaum-wanita"
             }
+
+
         ]
     }),
     components: {

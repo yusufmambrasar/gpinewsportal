@@ -47,15 +47,15 @@
         </p>
         <p> Dengan segera para pemuda ini  diutus untuk memberitakan  apa yang telah mereka terima. Mereka diutus ke Sulawesi dan mengalami berbagai  macam pengalaman.  Alkitab dipakai sebagai sumber jawaban segala pertanyaan dan tuntunan masa depan mereka , dan mempraktekan  Firman Allah</p>
 
-        <v-img src="../assets/logogpi.jpg" class="grey darken-4 rounded-lg my-10">
-        </v-img>
-
+          <p>Logo Gereja Pekabaran Injil Jalan Suci</p>
+            <v-img src="../assets/logogpi.jpg" class="grey darken-4 rounded-lg my-10">
+            </v-img>
         <p>Berulang kali visi tentang sebuah Training Center  Jalan Suci diteguhkan;  pada tahun 1968, melalui visi yang diterima Rochani, dan melalui beberapa kali suara nubuatan . Bible Training Centre pertama didirikan di  Lawang, Jawa Timur, pada tahun 1971. Ini adalah cara pendekatan non-formal dan radikal untuk melatih orang-orang muda melayani. Program ini mempersiapkan  siswa-siswa  baru dengan  dasar-dasar Alkitab yang fundamental, pengalaman penginjilan, dan realitas kehidupan dan pelayanan dalam Tubuh Kristus.</p>
         <p>Cara Yesus melatih  murid-murid-Nya  tidak bisa dipisahkan dari persekutuan-Nya dengan mereka. Murid-murid belajar dengan berasosiasi dengan-Nya, mengalami kasih-Nya, memperhatikan gaya hidup-Nya,  mengungkapkan  rahasia hati-Nya. Cara berkarya semacam  inilah yang  merupakan warisan dan Landasan  Jalan Suci.  
            Pada tahun 1976, Stube  menyerahkan "Jalan Suci" di tangan orang-orang muda Indonesia yang telah dilatihnya. Dalam beberapa dasawarsa ini, tim-tim  Pelayanan telah diutus  ke berbagai daerah di Indonesia dan di luar negeri. Banyak Pusat Pelatihan (Training Centres ) dan Pusat Ibadah( Penyembahan dalam Roh)  telah dibangun. Pekerjaan  ini berlanjut sampai hari ini.
            Website ini merupakan  kesaksian tentang kelanjutan pekerjaan dari  Jalan Suci di Indonesia dan tempat-tempat lainnya. Allah adalah setia, hasil pekerjaan  doa, penyembahan, pelatihan dan penginjilan terus  saja berkembang, dan kita berdoa agar Tuhan akan terus bekerja dalam kekuasaan-Nya.
            **PDF's from Andrew Stube (in English), 2014**
-          </p>
+        </p>
       </div>
     </v-col>
   </v-row>

@@ -64,7 +64,8 @@
           quis aliquid tempora ea,
           eum aut hic dicta reprehenderit voluptates officiis earum ex,
           atque optio at quas ratione! Temporibus!</p>
-
+          <br>
+          <p>Logo Gereja Pekabaran Injil Jalan Suci</p>
           <v-img src="../assets/lahai4.jpeg" height="400" class="grey darken-4 rounded-lg my-10">
         </v-img>
 

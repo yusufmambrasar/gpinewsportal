@@ -89,8 +89,8 @@ export default {
                 category: "Pelayanan",
                 slugCategory: "Pelayanan Diakonia",
                 slugTitle: "Pelayanan Diakonia kepada sesama",
-                title: "Pelayanan Diakonia kepada sesama 20 Sep 2022",
-                date: "25 Sep 2022",
+                title: "Pelayanan Diakonia kepada sesama pada 20 Sep 2022",
+                date: "10 Jam yang lalu",
                 img: "pelayanandiakonia.jpg"
             },
             {
@@ -99,7 +99,7 @@ export default {
                 slugCategory: "Sekolah Hamba Tuhan",
                 slugTitle: "Traning Hamba Hamba Tuhan, dimulai 1978",
                 title: "Traning Hamba Hamba Tuhan, dimulai 1978",
-                date: "25 Sep 2022",
+                date: "10 Jan 2023",
                 img: "belajar.jpg"
             },
             {
@@ -108,7 +108,7 @@ export default {
                 slugCategory: "cabang cabang GPI Jalan Suci di seluruh nusantara",
                 slugTitle: "cabang cabang GPI Jalan Suci di seluruh nusantara",
                 title: "cabang cabang GPI Jalan Suci",
-                date: "25 Sep 2022",
+                date: "9 Jan 2023",
                 img: "indonesia.jpg"
             },
             {
@@ -116,8 +116,8 @@ export default {
                 category: "Sinode",
                 slugCategory: "Peresmian Gedung Sinode",
                 slugTitle: "Peresmian Gereja Pekabaran Injil Jalan Suci pusat",
-                title: "Peresmian Gereja Pekabaran Injil Jalan Suci pusat di lawang",
-                date: "25 Sep 2022",
+                title: "Peresmian GPI JS Lawang",
+                date: "8 Jan 2023",
                 img: "sinode.jpg"
             }
         ]

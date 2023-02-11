@@ -163,7 +163,7 @@ export default defineComponent({
                 slugCategory: "pelayanan",
                 slugTitle: "Pelayanan Diakonia - kepada sesama saling mendoakan",
                 title: "Pelayanan Diakonia-mendoakan yang sakit",
-                date: "5 Feb 2023",
+                date: "10 Jam yang lalu",
                 source: "pelayanandiakonia.jpg"
             },
             {
@@ -181,7 +181,7 @@ export default defineComponent({
                 slugCategory: "sinode",
                 slugTitle: "Peresmian Kantor dan Gereja di Lawang",
                 title: "Peresmian Kantor dan Gereja di Lawang dan sebagai pusat Gereja GPI JS ",
-                date: "25 Sep 2006",
+                date: "10 Jan 2023",
                 source: "sinode.jpg"
             },
             {
@@ -190,7 +190,7 @@ export default defineComponent({
                 slugCategory: "cabang-gereja",
                 slugTitle: "Peresmian kantor dan gereja GPI JS Cabang Papua - Jayawijaya",
                 title: "Peresmian kantor dan gereja GPI JS Cabang Papua - Jayawijaya",
-                date: "10 Sep 2022",
+                date: "9 jan 2023",
                 source: "peresmian.jpeg"
             }, 
             {
@@ -198,10 +198,28 @@ export default defineComponent({
                 category: "Cabang Gereja",
                 slugCategory: "cabang-gereja",
                 slugTitle: "Peresmian kantor dan gereja GPI JS Cabang Papua - jayapura",
-                title: "Peresmian kantor dan gereja GPI JS Cabang Papua - Jayapura",
-                date: "10 Sep 2022",
+                title: "Peresmian kantor dan gereja GPI JS Jayapura",
+                date: "8 Jan 2023",
                 source: "cabang.jpg"
-            }
+            }, 
+            {
+                id: "2345",
+                category: "PPS",
+                slugCategory: "pps",
+                slugTitle: "Doa-awal-tahun-bersama-dilawang",
+                title: "Doa awal tahun bersama dilawang",
+                date: "7 jan 2023",
+                source: "pps.jpg"
+            }, 
+            {
+                id: "2345",
+                category: "kaum Wanita",
+                slugCategory: "kaum-wanita",
+                slugTitle: "Pertemuan-wanita",
+                title: "Pertemuan wanita dilawang",
+                date: "5 Jan 2023",
+                source: "kaumwanita.jpg"
+            } 
 
         ],
         datafiltering: [],
@@ -228,7 +246,7 @@ export default defineComponent({
         }
     },
     mounted() {
-        this.isShowNews = this.items.length > 0 ? true : false;
+        this.isShowNews = this.listData.length > 0 ? true : false;
     },
     methods: {
         setBreadcrumsData() {

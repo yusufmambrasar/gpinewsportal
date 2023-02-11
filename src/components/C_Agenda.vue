@@ -174,28 +174,28 @@ export default {
             {
                 id: "23453",
                 category: "Ibadah",
-                slugCategory: "Ibadah Natal",
-                slugTitle: "Ibadah Natal 2022",
+                slugCategory: "ibadah",
+                slugTitle: "ibadah-natal-2022",
                 title: "Ibadah Natal 2022 di jemaat GPI JS Jakarta Timur",
-                date: "5 Menit yang lalu",
+                date: "5 jan 2023",
                 datePublish: "25 Des 2022",
                 source: "natal.jpg"
             },
             {
                 id: "2366",
                 category: "Pelayanan",
-                slugCategory: "Pelayanan Mendoakan Orang Sakit",
-                slugTitle: "Pelayanan Mendoakan jemaat yang sedang Sakit ",
+                slugCategory: "pelayanan",
+                slugTitle: "pelayanan-mendoakan-jemaat-yang-sedang-sakit ",
                 title: "Pelayanan Mendoakan jemaat yang sedang Sakit dengan iman  Yesus Menyembuhkan",
-                datePublish: "8 jam yang lalu",
+                datePublish: "1 jan 2023",
                 date: "06 Jan 2023",
                 source: "pelayanandiakonia.jpg"
             },
             {
                 id: "2553",
-                category: "Traning",
-                slugCategory: "Program Pembelajaran Hamba Tuhan",
-                slugTitle: "Program Pembelajaran Hamba Tuhan",
+                category: "traning",
+                slugCategory: "traning",
+                slugTitle: "program-pembelajaran-hamba-tuhan",
                 title: "Program Pembelajaran Hamba Tuhan di mulai pada tahun 1978",
                 datePublish: "25 Jan 2022",
                 date: "07 Jan 2023",
@@ -204,9 +204,9 @@ export default {
             },
             {
                 id: "23499",
-                category: "Cabang",
-                slugCategory: "Cabang Cabang GPI Jalan Suci",
-                slugTitle: "Cabang Cabang GPI Jalan Suci",
+                category: "Cabang Gereja",
+                slugCategory: "cabang-gereja",
+                slugTitle: "cabang-cabang-gpi-jalan-suci",
                 title: "Cabang Cabang GPI Jalan Suci di seluruh nusantara",
                 datePublish: "25 November 2022",
                 date: "06 Jan 2023",
@@ -215,26 +215,164 @@ export default {
             },
             {
                 id: "2888",
-                category: "Ibadah",
-                slugCategory: "Ibadah Ucapan Syukur Persemian Kantor & Gereja",
-                slugTitle: "Ibadah Ucapan Syukur Persemian Kantor & Gereja",
-                title: "Ibadah Ucapan Syukur Persemian Kantor & Gereja di jayawijaya",
+                category: "PPS",
+                slugCategory: "pps",
+                slugTitle: "Pensyafaat-melakukan-kegiatan-doa",
+                title: "Pensyafaat melakukan kegiatan doa setiap tahun di tempat yang ditentukan",
                 datePublish: "18 Des 2022",
-                date: "01 Jan 2023",
-                source: "peresmian.jpeg"
+                date: "13 Jan 2023",
+                source: "pps.jpg"
 
             },
             {
                 id: "2345",
-                category: "Mision",
-                slugCategory: "Program Misi",
-                slugTitle: "Misi Pemberitaan Kabar Injil",
+                category: "Misi",
+                slugCategory: "misi",
+                slugTitle: "misi-pemberitaan-kabar-injil",
                 title: " Pelopor GPI JS Ps.Stube pada tahun 1978, melakukan kehendak Bapa di sorga",
                 datePublish: "25 Des 2022",
-                date: "01 Jan 2023",
+                date: "31 Jan 2023",
                 source: "mision.jpg"
 
-            }
+            }, 
+            {
+                id: "2345",
+                category: "Api Menyala",
+                slugCategory: "api-menyala",
+                slugTitle: "majalah-api-menyala",
+                title: "Majalah Api Menyala dikeluarkan oleh sinode yang di pakai oleh seluruh cabang gereja",
+                datePublish: "25 Des 2022",
+                date: "01 feb 2023",
+                source: "apimenyala.jpg"
+
+            },
+            {
+                id: "2345",
+                category: "Rakornas",
+                slugCategory: "rakornas",
+                slugTitle: "rapat-kordinasi-tiap-tahun-dilaksanan",
+                title: "rapat-kordinasi-tiap-tahun-dilaksanan pada tiap bulan agustus",
+                datePublish: "20 September 2022",
+                date: "01 november 2022",
+                source: "rakornas.jpg"
+
+            }, 
+            {
+                id: "2345",
+                category: "Sinode",
+                slugCategory: "sinode",
+                slugTitle: "sinode-melakukan-kegiatan-pemkus",
+                title: "sinode melakukan kegiatan mp6 dan lainnya yang merupakan pembentukan murid kristus",
+                datePublish: "25 Des 2022",
+                date: "12 jan 2023",
+                source: "sinode.jpg"
+
+            },
+            {
+                id: "2345",
+                category: "Bica",
+                slugCategory: "bica",
+                slugTitle: "bica-dilakukan-tiap-tahun",
+                title: "bica dilakukan tiap tahun di lawang pada bulan agustus",
+                datePublish: "20 September 2022",
+                date: "30 november 2022",
+                source: "bica.jpg"
+
+            }, 
+            {
+                id: "2345",
+                category: "Kaum Wanita",
+                slugCategory: "kaum-wanita-melakukan kegiatan tahun 2025 di jogja",
+                slugTitle: "kaum-wanita-melakukan kegiatan tahun 2025 di jogja",
+                title: "Kaum wanita melakukan kegiatan tahun 2025 di jogja",
+                datePublish: "20 September 2022",
+                date: "22 Agustus 2022",
+                source: "kaumwanita.jpg"
+
+            }, 
+            {
+                id: "2345",
+                category: "",
+                slugCategory: "sinode",
+                slugTitle: "sinode-melakukan-kegiatan-pemkus",
+                title: "sinode melakukan kegiatan pemkus dan lainnya yang merupakan pembentukan murid kristus",
+                datePublish: "25 Des 2022",
+                date: "01 feb 2023",
+                source: "mision.jpg"
+
+            },
+            {
+                id: "2345",
+                category: "Persidangan Ilahi",
+                slugCategory: "persidangan-ilahi",
+                slugTitle: "persidangan-dilakukan-tiap-tahun-dilawang",
+                title: "Persidangan Ilahi dilakukan tiap tahun",
+                datePublish: "1 januari 2022",
+                date: "21 januari 2022",
+                source: "pertemuanpengurus.jpg"
+
+            }, 
+            {
+                id: "2345",
+                category: "Youth Camp",
+                slugCategory: "youth-camp",
+                slugTitle: "youth-dilakukan-tiap-tahun",
+                title: "youth dilakukan tiap tahun di lawang pada bulan",
+                datePublish: "3 maret 2022",
+                date: "12 maret 2022",
+                source: "youthcamp.jpg"
+
+            }, 
+            {
+                id: "2345",
+                category: "Ibadah",
+                slugCategory: "ibadah",
+                slugTitle: "ibadah-natal-sekolah-minggu",
+                title: "Ibadah natal sekolah minggu",
+                datePublish: "20 mey 2022",
+                date: "01 juni 2022",
+                source: "sundayschool.jpg"
+
+            }, 
+            {
+                id: "2345",
+                category: "Traning",
+                slugCategory: "traning",
+                slugTitle: "program-traning-dilakukan-tiap-tahun-dibeberapa cabang dan sinode",
+                title: "program traning dilakukan tiap tahun dibeberapa cabang dan sinode",
+                datePublish: "13 juni 2022",
+                date: "11 Agustus 2022",
+                source: "bukudanmajalah.jpg"
+
+            }, 
+
+            {
+                id: "2345",
+                category: "PPS",
+                slugCategory: "pps",
+                slugTitle: "program-doa-dilakukan-tiap-tahun-dibeberapa cabang dan sinode",
+                title: "program doa dilakukan tiap tahun dibeberapa cabang dan sinode",
+                datePublish: "30 September 2022",
+                date: "11 november 2022",
+                source: "foto8.jpg"
+
+            }, 
+
+            {
+                id: "2345",
+                category: "Cabang Gereja",
+                slugCategory: "cabang-gereja",
+                slugTitle: "ibadah persekutuan bersama di jemaat lokal jakarta timur",
+                title: "ibadah persekutuan bersama di jemaat lokal jakarta timur 2022",
+                datePublish: "12 november 2022",
+                date: "23 november 2022",
+                source: "foto3.jpg"
+
+            }, 
+
+            
+            
+
         ]
     }),
     components: {
@@ -309,7 +447,7 @@ export default {
         this.setBreadcrumsData();
     },
     mounted() {
-        this.isShowAgenda = this.items.length > 0 ? true : false;
+        this.isShowAgenda = this.listData.length > 0 ? true : false;
     },
 }
 </script>

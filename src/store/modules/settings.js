@@ -148,7 +148,7 @@ const state = {
         isScroll: false,
         isPersistent: false,
         width: 600,
-        title: "GKI Lahai-Roi Ayamaru",
+        title: "GPI JALAN SUCI NASIONAL",
         buttonFooter: {
             save: "OK",
             close: "OK"

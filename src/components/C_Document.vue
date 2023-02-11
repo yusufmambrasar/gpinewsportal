@@ -162,8 +162,8 @@ export default {
         },
         {
           id: "2366",
-          category: "Ibadah",
-          slugCategory: "Natal",
+          category: "Cabang Gereja",
+          slugCategory: "cabang-gereja",
           slugTitle: "ibadah-natal-2022",
           title: "Ibadah Natal Jemaat GPI Jaktim 2022",
           date: "8 jam yang lalu",
@@ -175,7 +175,7 @@ export default {
           slugCategory: "Laporan Keuangan",
           slugTitle: "Laporan Keuangan Tahun 2022",
           title: "Laporan Keuangan Tahun 2022",
-          date: "25 Sep 2022",
+          date: "18 Des 2022",
           source: "laporankeuangan1.jpg"
         },
         {
@@ -193,17 +193,62 @@ export default {
           slugCategory: "Traning",
           slugTitle: "Traning",
           title: "Program Pembelajaran Hamba Tuhan",
-          date: "25 Sep 2022",
-          source: "belajar.jpg"
+          date: "1 Jan 2022",
+          source: "bukudanmajalah.jpg"
         },
         {
           id: "2345",
           category: "Cabang",
           slugCategory: "Jemaat di semua Cabang Cabang/Jemaat",
           slugTitle: "Jemaat di semua Cabang Cabang/Jemaat",
-          title: "Jumlah jemaat GPI Jalan Suci pada seluruh daerah di indonesia",
-          date: "25 Sep 2022",
+          title: "Jumlah jemaat GPI Jalan Suci  di indonesia",
+          date: "20 Jan 2023",
           source: "datajemaat.jpg"
+        }, 
+        {
+          id: "2345",
+          category: "Api Menyala",
+          slugCategory: "api-menyala",
+          slugTitle: "Buku-dan-majalah-api-menyala",
+          title: "Buku dan majalah api menyala dari  ",
+          date: "25 Jan 2023",
+          source: "majalahapimenyala.png"
+        }, 
+        {
+          id: "2345",
+          category: "Rakornas",
+          slugCategory: "rakornas",
+          slugTitle: "hasil-rakernas",
+          title: "hasil-rakernas-tahun-2022",
+          date: "20 Sep 2022",
+          source: "dokument6.jpg"
+        }, 
+        {
+          id: "2345",
+          category: "Sinode",
+          slugCategory: "sinode",
+          slugTitle: "Dokument-tanda-masuk-dalam-anggota-PGPI",
+          title: "Dokument tanda masuk dalam anggota PGPI",
+          date: "25 Jan 2020",
+          source: "dokumentkeanggotaan.jpg"
+        }, 
+        {
+          id: "2345",
+          category: "Misi",
+          slugCategory: "misi",
+          slugTitle: "bahan-ajar-penginjilan",
+          title: "bahan ajar penginjilan GPI JS",
+          date: "25 Jan 2020",
+          source: "bukudanmajalah.jpg"
+        }, 
+        {
+          id: "2345",
+          category: "Persidangan Ilahi",
+          slugCategory: "persidangan.ilahi",
+          slugTitle: "dokument-hasil-persidangan-ilahi",
+          title: "Hasil Persidangan Ilahi",
+          date: "25 Jan 2020",
+          source: "hasilpersidanganilahi.jpg"
         }
       ],
       data: []

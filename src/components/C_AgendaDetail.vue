@@ -4,7 +4,7 @@
       <v-col md="10" offset-md="1">
         <v-img :src="require(`../assets/${rows.source}`)" :alt="rows.title"
           :lazy-src="require(`../assets/${rows.source}`)" class="white--text align-end rounded-lg"
-          gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
+          gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)" height="400px">
           <v-card-title>
             <v-container>
               <h3 class="font-weight-medium"> <v-icon class="white--text"> mdi-bell </v-icon> {{ rows.date }}</h3>

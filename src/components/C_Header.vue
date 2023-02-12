@@ -1,7 +1,7 @@
  
 <template>
     <div>
-        <v-app-bar color="primary" elevation="0" height="auto">
+        <v-app-bar color="transparent" elevation="0" height="auto">
 
             <v-main>
                 <div class="d-lg-none">
@@ -36,20 +36,20 @@
                 </div>
                 <div class="d-none d-lg-block">
                     <v-row class="mt-2">
-                        <v-col md="4" class="text-left pt-0 pb-0">
+                        <v-col md="5" class="text-left pt-0 pb-0">
                             <v-btn small :active-class="('white--text ' + settings.color)" v-for="link in menu.topLeft"
                                 :key="link.name" :to="link.path" outlined class="text-right" rounded>
 
                                 <v-icon>{{ link.icon }}</v-icon> {{ link.name }}
                             </v-btn>
                         </v-col>
-                        <v-col md="8" class="text-right  pt-0 pb-0">
+                        <v-col md="7" class="text-right  pt-0 pb-0">
                             <v-row>
                                 <v-col md="10" class="pr-15">
                                     <v-btn small v-for="link in menu.topRight" :key="link.icon" :to="link.path" icon
                                         class="circle mx-2">
 
-                                        <v-icon>{{ link.icon }}</v-icon>
+                                        <v-icon>{{ link.icon }}</v-icon> {{link.name}}
                                     </v-btn>
                                 </v-col>
 
@@ -79,14 +79,14 @@
                                 </v-col>
                             </v-row>
                         </v-col>
-                        <v-col md="3">
+                        <v-col md="4">
                             <router-link to="/">
                                 <v-img alt="Vuetify Name" class="shrink mt-1 hidden-sm-and-down" contain min-width="100"
                                     :src="require(`../assets/${imageName}`)" width="100%" />
                             </router-link>
 
                         </v-col>
-                        <v-col md="9" class="text-right">
+                        <v-col md="8" class="text-right">
                             <v-btn :small="styleData.small" :rounded="styleData.rounded" v-for="link in menu.right"
                                 :active-class="('white--text ' + settings.color)" :key="link.name" :to="link.path" text
                                 class="my-4" :outlined="link.outlined">

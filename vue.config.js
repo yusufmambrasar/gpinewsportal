@@ -7,13 +7,13 @@ module.exports = {
   },
   chainWebpack: config => {
     config.plugin('html').tap(args => {
-      args[0].title = "GKI Lahai-Roi Mefkajim Ayamaru";
+      args[0].title = 'GPI "Jalan Suci"';
       return args;
     });
   },
   pwa: {
-    name: "GKI Lahai-Roi Mefkajim Ayamaru",
-    short_name: "<Application Short Name>",
+    name: 'GPI "Jalan Suci"',
+    short_name: 'GPI "Jalan Suci"',
     theme_color: "#1976d2",
     background_color: "#fafafa",
     manifestOptions: {

@@ -1,7 +1,7 @@
 <template>
     <div>
         <v-row>
-            <Breadcrumbs />
+            <!-- <Breadcrumbs /> -->
             <v-col md="12">
                 <v-card class="mx-auto">
                     <v-img src="../assets/famly.jpg" height="300px" dark>

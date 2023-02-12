@@ -26,12 +26,12 @@
       <!-- <v-spacer></v-spacer> -->
       <span class="text-h7 mx-2 text-right grey--text">Natal</span>
     </v-container>
-    <v-toolbar elevation="0" color="primary"> 
+    <v-toolbar elevation="0" color="transparent"> 
       <v-text-field dense rounded filled width="100%" class="mt-7" placeholder="Masukan kata yang ingin dicari disini"
         prepend-inner-icon="mdi-magnify">
       </v-text-field>
     </v-toolbar>
-    <v-list three-line color="primary">
+    <v-list three-line color="transparent">
       <v-list-item v-for="(item, i) in items" :key="i">
 
         <v-img :src="item.image" class="mr-4 rounded" max-width="100" min-width="100"></v-img>

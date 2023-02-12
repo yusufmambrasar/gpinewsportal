@@ -1,5 +1,5 @@
 <template>
-  <v-footer padless color="primary">
+  <v-footer padless color="transparent">
     <div v-if="!settings.screenSize.type.islg">
       <!-- <DrawerNavigations @drawerData=drawerData :headerTitle="headerTitleValue" :drawer="drawerVal"/> -->
       <v-navigation-drawer v-model="drawer" fixed left class="rounded-r-lg" style="position: fixed; z-index: 888;">

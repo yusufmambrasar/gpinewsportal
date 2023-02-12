@@ -26,7 +26,7 @@
       </v-list>
     </div>
     <div v-else>
-      <v-toolbar elevation="0" color="primary">
+      <v-toolbar elevation="0" color="transparent">
         <v-text-field dense rounded filled width="100%" class="mt-7" v-model="searchValueData"
           placeholder="Masukan kata yang ingin dicari disini" prepend-inner-icon="mdi-magnify"
           @keyup="$emit('searchData', searchValueData)">

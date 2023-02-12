@@ -1,5 +1,5 @@
 <template>
-    <v-sheet class="mx-auto" color="primary" v-if="settings.screenSize.type.islg">
+    <v-sheet class="mx-auto" color="transparent" v-if="settings.screenSize.type.islg">
         <v-slide-group show-arrows next-icon="mdi-arrow-right-thin-circle-outline"
             prev-icon="mdi-arrow-left-thin-circle-outline">
             <v-slide-item v-for="n in items" v-slot="{ active, toggle }">

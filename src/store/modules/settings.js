@@ -43,7 +43,7 @@ const {
 
 
 const state = {
-    color: "teal",
+    color: "cyan darken-2",
     isMobileData: null,
     isDarkMode: false,
     outlinedGeneralButton: true,
@@ -52,8 +52,8 @@ const state = {
     defaultImageSmallContentHeight: "150",
     allCategory: "semua-kategori",
     image: {
-        darkmode: "logoDark.png",
-        lightmode: "logoLight.png"
+        darkmode: "logowebDark.png",
+        lightmode: "logowebLight.png"
     },
     menu: {
         topLeft: [{
@@ -62,7 +62,8 @@ const state = {
             icon: "mdi-map-marker-outline",
             outlined: false
         }, ],
-        topRight: [{
+        topRight: [
+            {
                 name: "",
                 path: "/facebook",
                 icon: "mdi-facebook",

@@ -2,20 +2,20 @@
     <div>
         <v-main>
             <v-container>
-                <Jadwal />
+                <C_CabangGereja />
             </v-container>
         </v-main>
     </div>
 </template>
-  
+
 <script>
 // @ is an alias to /src
-import Jadwal from '@/components/C_JadwalIbadah';
+import C_CabangGereja from '@/components/C_Cabang.vue';
 
 export default {
-    name: "JadwalIbadah",
+    name: "CabangGereja",
     components: {
-        Jadwal
+        C_CabangGereja
     },
     mounted() {
         this.toTop();
@@ -27,4 +27,3 @@ export default {
     }
 }
 </script>
-  

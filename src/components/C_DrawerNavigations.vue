@@ -57,8 +57,8 @@
                     <span>Info</span>
                     <v-icon>mdi-newspaper-variant-multiple</v-icon>
                 </v-btn>
-                <v-btn to="/jadwal">
-                    <span>Ibadah</span>
+                <v-btn to="/cabang">
+                    <span>Cabang Gereja</span>
                     <v-icon>mdi-book-open-variant</v-icon>
                 </v-btn>
 
@@ -127,7 +127,7 @@ export default {
     },
     created() {
         this.getMenuData();
-        console.log(this.drawerVal );
+        console.log(this.drawerVal);
         // this.drawerVal = this.drawer;
     },
     methods: {

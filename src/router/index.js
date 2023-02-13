@@ -60,6 +60,11 @@ const routes = [{
     component: () => import( /* webpackChunkName: "about" */ '../views/AgendaDetail.vue')
   },
   {
+    path: '/informasi/detail/:id',
+    name: 'News',
+    component: () => import( /* webpackChunkName: "about" */ '../views/NewsDetail.vue')
+  },
+  {
     path: '/kontak',
     name: 'Kontak',
     component: () => import( /* webpackChunkName: "about" */ '../views/Contact.vue')
@@ -90,9 +95,14 @@ const routes = [{
     component: () => import( /* webpackChunkName: "about" */ '../views/SearchPage.vue')
   },
   {
-    path: '/jadwal',
+    path: '/cabang',
     name: 'Pencarian',
-    component: () => import( /* webpackChunkName: "about" */ '../views/JadwalIbadah.vue')
+    component: () => import( /* webpackChunkName: "about" */ '../views/CabangGereja.vue')
+  },
+  {
+    path: '/cabang/detail/:id',
+    name: 'Pencarian',
+    component: () => import( /* webpackChunkName: "about" */ '../views/CabangGerejaDetail.vue')
   },
   {
     path: "/:catchAll(.*)",

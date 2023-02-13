@@ -17,45 +17,44 @@
             </v-col>
         </v-row>
         <v-row>
-            <v-col md="6" v-show="isShowAgenda" v-for="item in listData">
+            <v-col md="4" v-show="isShowAgenda" v-for="item in listData">
                 <v-flex xs12>
                     <v-hover v-slot="{ hover }" open-delay="200">
-                        <router-link :to="'/informasi/detail/' + item.slugTitle" class="text-decoration-none">
+                        <router-link :to="'/agenda/detail/' + item.slugTitle" class="text-decoration-none">
                             <v-card :elevation="hover ? 18 : 1" :class="{ 'on-hover': hover }">
                                 <v-container fluid grid-list-lg>
                                     <v-layout row>
-                                        <v-flex xs7>
-                                            <v-img :src="require(`../assets/${item.img}`)" width="300"
-                                                :height="settings.defaultImageSmallContentHeight"
-                                                :lazy-src="require(`../assets/${item.img}`)"
-                                                class="grey darken-4 rounded-lg">
-                                                <template v-slot:placeholder>
-                                                    <v-row class="fill-height ma-0" align="center" justify="center">
-                                                        <v-progress-circular indeterminate color="grey lighten-5">
-                                                        </v-progress-circular>
-                                                    </v-row>
-                                                </template>
-                                            </v-img>
-                                        </v-flex>
-                                        <v-flex xs5>
-                                            <div>
 
-                                                <h2 class="font-weight-medium grey--text">
-                                                    <v-icon class="grey--text">
+                                        <v-img :src="require(`../assets/${item.source}`)"
+                                            :height="settings.defaultImageSmallContentHeight"
+                                            :lazy-src="require(`../assets/${item.source}`)" class="rounded-lg">
+                                            <h2 class="font-weight-medium grey--text">
+
+                                                <v-chip class="ma-2" dark :color="settings.color">
+                                                    <v-icon>
                                                         mdi-bell
                                                     </v-icon> {{ item.date }}
-                                                </h2>
-
-                                            </div>
-                                            <div class="subheading font-weight-medium mt-1">
+                                                </v-chip>
+                                            </h2>
+                                            <template v-slot:placeholder>
+                                                <v-row class="fill-height ma-0" align="center" justify="center">
+                                                    <v-progress-circular indeterminate color="grey lighten-5">
+                                                    </v-progress-circular>
+                                                </v-row>
+                                            </template>
+                                        </v-img>
+                                        <div class="mt-2">
+                                            <div class="subheading font-weight-medium">
                                                 {{ item.title }}
                                             </div>
                                             <h5 class="float-left font-weight-regular my-2">
                                                 <v-chip class="ma-2" small outlined :color="settings.color">
                                                     {{ item.category }}
-                                                </v-chip> {{ item.datePublish }}
+                                                </v-chip> {{ item.date }}
                                             </h5>
-                                        </v-flex>
+                                        </div>
+
+
                                     </v-layout>
                                 </v-container>
                             </v-card>
@@ -85,32 +84,68 @@ export default {
         isShowAgenda: false,
         listData: [
             {
-                title: "Ibadah Natal 2021",
+                id: "23453",
                 category: "Ibadah",
-                date: "25 Des 2021",
-                datePublish: "16 Des 2022",
-                img:"natal.jpg"
+                slugCategory: "ibadah",
+                slugTitle: "ibadah-natal-2022",
+                title: "Ibadah Natal 2022 di jemaat GPI JS Jakarta Timur",
+                date: "5 jan 2023",
+                datePublish: "25 Des 2022",
+                source: "natal.jpg"
             },
             {
-                title: "Pelayanan Diakonia",
+                id: "2366",
                 category: "Pelayanan",
-                date: "25 Sep 2022",
-                datePublish: "16 Des 2021",
-                img:"foto1.jpg"
+                slugCategory: "pelayanan",
+                slugTitle: "pelayanan-mendoakan-jemaat-yang-sedang-sakit",
+                title: "Pelayanan Mendoakan jemaat yang sedang Sakit dengan iman  Yesus Menyembuhkan",
+                datePublish: "1 jan 2023",
+                date: "06 Jan 2023",
+                source: "pelayanandiakonia.jpg"
             },
             {
-                title: "Peresmian Gereja Pekabaran Injil Jalan Suci pusat di lawang",
-                category: "Ibadah",
-                date: "14 Nov 2022",
-                datePublish: "16 Des 2021",
-                img:"peresmian.jpeg"
+                id: "2553",
+                category: "traning",
+                slugCategory: "traning",
+                slugTitle: "program-pembelajaran-hamba-tuhan",
+                title: "Program Pembelajaran Hamba Tuhan di mulai pada tahun 1978",
+                datePublish: "25 Jan 2022",
+                date: "07 Jan 2023",
+                source: "belajar.jpg"
+
             },
             {
-                title: "Pengabaran Injil",
-                category: "Mision",
-                date: "02 Jan 2022",
-                datePublish: "16 Des 2021",
-                img:"penginjilan.jpg"
+                id: "23499",
+                category: "Cabang Gereja",
+                slugCategory: "cabang-gereja",
+                slugTitle: "cabang-cabang-gpi-jalan-suci",
+                title: "Cabang Cabang GPI Jalan Suci di seluruh nusantara",
+                datePublish: "25 November 2022",
+                date: "06 Jan 2023",
+                source: "indonesia.jpg"
+
+            },
+            {
+                id: "2888",
+                category: "PPS",
+                slugCategory: "pps",
+                slugTitle: "Pensyafaat-melakukan-kegiatan-doa",
+                title: "Pensyafaat melakukan kegiatan doa setiap tahun di tempat yang ditentukan",
+                datePublish: "18 Des 2022",
+                date: "13 Jan 2023",
+                source: "pps.jpg"
+
+            },
+            {
+                id: "2345",
+                category: "Misi",
+                slugCategory: "misi",
+                slugTitle: "misi-pemberitaan-kabar-injil",
+                title: " Pelopor GPI JS Ps.Stube pada tahun 1978, melakukan kehendak Bapa di sorga",
+                datePublish: "25 Des 2022",
+                date: "31 Jan 2023",
+                source: "mision.jpg"
+
             }
         ]
     }),

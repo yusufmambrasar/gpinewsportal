@@ -24,7 +24,7 @@
                                     <v-card :elevation="hover ? 5 : 1" :class="{ 'on-hover': hover }">
                                         <v-container fluid grid-list-lg>
                                             <v-layout row>
-                                                <v-img :src="require(`../assets/${item.img}`)"
+                                                <v-img :src="require(`../assets/${item.source}`)"
                                                     :height="settings.defaultImageSmallContentHeight"
                                                     class="rounded-lg">
                                                 </v-img>
@@ -68,57 +68,84 @@ export default {
         listData: [
             {
                 id: "23453",
-                category: "Mision",
-                slugCategory: "Penginjilan",
-                slugTitle: "Program Penginjilan",
-                title: "Penginjilan di tempat baru",
+                category: "Misi",
+                slugCategory: "misi",
+                slugTitle: "misi",
+                title: "Penginjilan di tempat baru, 2021",
                 date: "5 Menit yang lalu",
-                img: "penginjilan.jpg"
+                source: "penginjilan.jpg"
             },
             {
                 id: "2366",
                 category: "Ibadah",
-                slugCategory: "Ibadah Natal 2022",
-                slugTitle: "ibadah-natal-2022",
-                title: "Ibadah Natal 2022 di lawang",
+                slugCategory: "ibadah",
+                slugTitle: "ibadah-natal",
+                title: "Ibadah Natal, jakarta timur 2022",
                 date: "8 jam yang lalu",
-                img: "natal.jpg"
+                source: "natal.jpg"
             },
             {
                 id: "2553",
                 category: "Pelayanan",
-                slugCategory: "Pelayanan Diakonia",
-                slugTitle: "Pelayanan Diakonia kepada sesama",
-                title: "Pelayanan Diakonia kepada sesama pada 20 Sep 2022",
+                slugCategory: "pelayanan",
+                slugTitle: "Pelayanan Diakonia - kepada sesama saling mendoakan",
+                title: "pelayanan-diakonia-mendoakan-yang-sakit",
                 date: "10 Jam yang lalu",
-                img: "pelayanandiakonia.jpg"
+                source: "pelayanandiakonia.jpg"
             },
             {
                 id: "23499",
                 category: "Traning",
-                slugCategory: "Sekolah Hamba Tuhan",
-                slugTitle: "Traning Hamba Hamba Tuhan, dimulai 1978",
-                title: "Traning Hamba Hamba Tuhan, dimulai 1978",
-                date: "10 Jan 2023",
-                img: "belajar.jpg"
+                slugCategory: "traning",
+                slugTitle: "Traning Hamba Hamba Tuhan",
+                title: "Traning Hamba Hamba Tuhan yang telah dimulai sejak 1978 oleh Ps.Stube",
+                date: "25 Sep 2022",
+                source: "belajar.jpg"
             },
             {
                 id: "2888",
-                category: "Cabang",
-                slugCategory: "cabang cabang GPI Jalan Suci di seluruh nusantara",
-                slugTitle: "cabang cabang GPI Jalan Suci di seluruh nusantara",
-                title: "cabang cabang GPI Jalan Suci",
-                date: "9 Jan 2023",
-                img: "indonesia.jpg"
+                category: "Sinode",
+                slugCategory: "sinode",
+                slugTitle: "Peresmian Kantor dan Gereja di Lawang",
+                title: "Peresmian Kantor dan Gereja di Lawang dan sebagai pusat Gereja GPI JS ",
+                date: "10 Jan 2023",
+                source: "sinode.jpg"
             },
             {
                 id: "2345",
-                category: "Sinode",
-                slugCategory: "Peresmian Gedung Sinode",
-                slugTitle: "Peresmian Gereja Pekabaran Injil Jalan Suci pusat",
-                title: "Peresmian GPI JS Lawang",
+                category: "Cabang Gereja",
+                slugCategory: "cabang-gereja",
+                slugTitle: "Peresmian kantor dan gereja GPI JS Cabang Papua - Jayawijaya",
+                title: "Peresmian kantor dan gereja GPI JS Cabang Papua - Jayawijaya",
+                date: "9 jan 2023",
+                source: "peresmian.jpeg"
+            },
+            {
+                id: "2345",
+                category: "Cabang Gereja",
+                slugCategory: "cabang-gereja",
+                slugTitle: "Peresmian kantor dan gereja GPI JS Cabang Papua - jayapura",
+                title: "Peresmian kantor dan gereja GPI JS Jayapura",
                 date: "8 Jan 2023",
-                img: "sinode.jpg"
+                source: "cabang.jpg"
+            },
+            {
+                id: "2345",
+                category: "PPS",
+                slugCategory: "pps",
+                slugTitle: "Doa-awal-tahun-bersama-dilawang",
+                title: "Doa awal tahun bersama dilawang",
+                date: "7 jan 2023",
+                source: "pps.jpg"
+            },
+            {
+                id: "2345",
+                category: "kaum Wanita",
+                slugCategory: "kaum-wanita",
+                slugTitle: "Pertemuan-wanita",
+                title: "Pertemuan wanita dilawang",
+                date: "5 Jan 2023",
+                source: "kaumwanita.jpg"
             }
         ]
     }),

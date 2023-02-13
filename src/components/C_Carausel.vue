@@ -4,15 +4,15 @@
   <div>
     <v-carousel cycle :show-arrows="false" delimiter-icon="mdi-checkbox-blank-circle-outline" class="mb-15 rounded-lg"
       :height="imageSize">
-      <v-carousel-item v-for="(item, i) in items" :key="i" :src="require(`../assets/${item.img}`)">
+      <v-carousel-item v-for="(item, i) in items" :key="i" :src="require(`../assets/${item.source}`)"
+        gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.6)">
         <v-row class="fill-height" align="center" justify="center">
           <v-col class="ml-15">
-            <v-chip class="ma-2" close :color="settings.color" dark
-              :to="'/informasi/kategori/' + item.slug">
-              {{ item.category }}
-            </v-chip>
-            <br>
-            <router-link :to="'/informasi/detail/' + item.slugTitle">
+            <router-link :to="'/informasi/detail/' + item.slugTitle" class="text-decoration-none">
+              <v-chip class="ma-2" close :color="settings.color" dark>
+                {{ item.category }}
+              </v-chip>
+              <br>
               <div class="text-h4 white--text float-left">
                 {{ item.title }}
               </div>
@@ -39,44 +39,51 @@ export default {
       imageSize: 500,
       model: null,
       items: [
-      {
-          category: "Sinode",
-          slug: "sinode",
-          title: "Sinode dilawang",
-          slugTitle: 'Kantor-sinode-GPI-Jalan-Suci-lawang',
-          img: 'profillawang.jpg',
-        },
-
         {
-          category: "Cabang",
-          slug: "cabang",
-          title: "Cabang GPI daerah jakarta timur, januari 2023",
-          slugTitle: 'Cabang-gpi-daerah-jakarta-timur-januari-2023',
-          img: 'ibadah.jpg',
+          id: "23453",
+          category: "Misi",
+          slugCategory: "misi",
+          slugTitle: "misi",
+          title: "Penginjilan di tempat baru, 2021",
+          date: "5 Menit yang lalu",
+          source: "penginjilan.jpg"
         },
-
         {
-          category: "Mision",
-          slug: "mision",
-          title: "Pemberitaan Firman Tuhan sebagai kabar Keselamatan kekal",
-          slugTitle: 'misi',
-          img: 'penginjilan.jpg',
+          id: "2366",
+          category: "Ibadah",
+          slugCategory: "ibadah",
+          slugTitle: "ibadah-natal",
+          title: "Ibadah Natal, jakarta timur 2022",
+          date: "8 jam yang lalu",
+          source: "natal.jpg"
         },
-    
         {
+          id: "2553",
           category: "Pelayanan",
-          slug: "pelayanan",
-          title: "Kegiatan Sekolah Minggu ",
-          slugTitle: 'sekolah-minggu',
-          img: 'sundayschool.jpg',
+          slugCategory: "pelayanan",
+          slugTitle: "Pelayanan Diakonia - kepada sesama saling mendoakan",
+          title: "pelayanan-diakonia-mendoakan-yang-sakit",
+          date: "10 Jam yang lalu",
+          source: "pelayanandiakonia.jpg"
         },
         {
+          id: "23499",
           category: "Traning",
-          slug: "traning",
-          title: "Program Belajar Hamba Tuhan",
-          slugTitle: 'program-belajar-hamba-tuhan',
-          img: 'belajar.jpg',
+          slugCategory: "traning",
+          slugTitle: "Traning Hamba Hamba Tuhan",
+          title: "Traning Hamba Hamba Tuhan yang telah dimulai sejak 1978 oleh Ps.Stube",
+          date: "25 Sep 2022",
+          source: "belajar.jpg"
         },
+        {
+          id: "2888",
+          category: "Sinode",
+          slugCategory: "sinode",
+          slugTitle: "Peresmian Kantor dan Gereja di Lawang",
+          title: "Peresmian Kantor dan Gereja di Lawang dan sebagai pusat Gereja GPI JS ",
+          date: "10 Jan 2023",
+          source: "sinode.jpg"
+        }
       ],
     }
   },

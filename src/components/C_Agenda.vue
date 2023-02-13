@@ -31,16 +31,15 @@
                                                         </v-progress-circular>
                                                     </v-row>
                                                 </template>
-                                            </v-img>
-                                            <div class="mt-3 ml-3">
 
-                                                <h2 class="font-weight-medium grey--text">
-                                                    <v-icon class="grey--text">
+                                                <v-chip class="ma-2" dark :color="settings.color">
+                                                    <v-icon>
                                                         mdi-bell
                                                     </v-icon> {{ item.date }}
-                                                </h2>
+                                                </v-chip>
 
-
+                                            </v-img>
+                                            <div class="mt-3 ml-3"> 
                                                 <div class="subheading font-weight-medium">
                                                     {{ item.title }}
                                                 </div>
@@ -113,7 +112,27 @@
                                     </v-flex>
                                     <v-flex xs7>
                                         <div>
+                                            <v-img :src="require(`../assets/${item.source}`)" :height="150"
+                                                :lazy-src="require(`../assets/${item.source}`)" class="rounded-lg">
+                                                <h2 class="font-weight-medium grey--text">
 
+                                                    <v-chip class="ma-2" dark :color="settings.color">
+                                                        <v-icon>
+                                                            mdi-bell
+                                                        </v-icon> {{ item.date }}
+                                                    </v-chip>
+                                                </h2>
+                                            </v-img>
+                                            <div class="mt-2">
+                                                <div class="subheading font-weight-medium">
+                                                    {{ item.title }}
+                                                </div>
+                                                <h5 class="float-left font-weight-regular my-2">
+                                                    <v-chip class="ma-2" small outlined :color="settings.color">
+                                                        {{ item.category }}
+                                                    </v-chip> {{ item.date }}
+                                                </h5>
+                                            </div>
                                             <h2 class="font-weight-medium grey--text">
                                                 <v-icon class="grey--text">
                                                     mdi-bell
@@ -368,11 +387,7 @@ export default {
                 date: "23 november 2022",
                 source: "foto3.jpg"
 
-            },
-
-
-
-
+            }
         ]
     }),
     components: {

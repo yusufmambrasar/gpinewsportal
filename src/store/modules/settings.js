@@ -58,12 +58,11 @@ const state = {
     menu: {
         topLeft: [{
             name: "Cabang Gereja",
-            path: "/jadwal",
+            path: "/cabang",
             icon: "mdi-map-marker-outline",
             outlined: false
         }, ],
-        topRight: [
-            {
+        topRight: [{
                 name: "",
                 path: "/facebook",
                 icon: "mdi-facebook",

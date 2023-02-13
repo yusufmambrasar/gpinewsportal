@@ -29,15 +29,15 @@ export default {
     data: () => ({
         selectedItem: 0,
         model: null,
-        isMobile: false,
+        isMobile: false, 
         items: [
-            { text: 'Semua', icon: 'mdi-clock', total: 5, slug: "semua-provinsi" },
+            { text: 'Semua', icon: 'mdi-clock', total: 5, slug: "semua-kategori" },
             { text: 'Papua', icon: 'mdi-clock', total: 5, slug: "papua" },
             { text: 'Jawa', icon: 'mdi-account', total: 10, slug: "jawa" },
             { text: 'Sulawesi', icon: 'mdi-flag', total: 10, slug: "sulawesi" },
-            { text: 'Kalimantan', icon: 'mdi-flag', total: 12, slug: "kalimantan" }, 
+            { text: 'Kalimantan', icon: 'mdi-flag', total: 12, slug: "kalimantan" },
             { text: 'Sumatera', icon: 'mdi-flag', total: 12, slug: "Sumatera" }
-           
+
         ]
     }),
     components: {

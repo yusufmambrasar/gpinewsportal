@@ -100,7 +100,18 @@ const state = {
             {
                 name: "Profil",
                 path: "/profil",
-                icon: "mdi-home-city-outline"
+                icon: "mdi-chevron-down",
+                submenu: [{
+                        name: "Sejarah",
+                        path: "/sejarah",
+                        icon: "mdi-image"
+                    },
+                    {
+                        name: "Visi & Misi",
+                        path: "/visimisi",
+                        icon: "mdi-video"
+                    }
+                ],
             },
             {
                 name: "Agenda",

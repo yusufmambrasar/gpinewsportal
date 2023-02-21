@@ -50,6 +50,16 @@ const routes = [{
     component: () => import( /* webpackChunkName: "about" */ '../views/Profile.vue')
   },
   {
+    path: '/sejarah',
+    name: 'Sejarah',
+    component: () => import( /* webpackChunkName: "about" */ '../views/Sejarah.vue')
+  },
+  {
+    path: '/visimisi',
+    name: 'VisiMisi',
+    component: () => import( /* webpackChunkName: "about" */ '../views/VisiMisi.vue')
+  },
+  {
     path: '/agenda',
     name: 'Agenda',
     component: () => import( /* webpackChunkName: "about" */ '../views/Agenda.vue')

@@ -39,7 +39,7 @@
                                                 </v-chip>
 
                                             </v-img>
-                                            <div class="mt-3 ml-3"> 
+                                            <div class="mt-3 ml-3">
                                                 <div class="subheading font-weight-medium">
                                                     {{ item.title }}
                                                 </div>
@@ -98,49 +98,26 @@
                         <v-card :elevation="hover ? 18 : 1" :class="{ 'on-hover': hover }">
                             <v-container fluid grid-list-lg>
                                 <v-layout row>
-                                    <v-flex xs5>
-                                        <v-img src="../assets/profilemefkajim.jpg" width="300"
-                                            :height="settings.defaultImageSmallContentHeight"
-                                            lazy-src="../assets/profilemefkajim.jpg" class="grey darken-4 rounded-lg">
-                                            <template v-slot:placeholder>
-                                                <v-row class="fill-height ma-0" align="center" justify="center">
-                                                    <v-progress-circular indeterminate color="grey lighten-5">
-                                                    </v-progress-circular>
-                                                </v-row>
-                                            </template>
-                                        </v-img>
-                                    </v-flex>
-                                    <v-flex xs7>
-                                        <div>
-                                            <v-img :src="require(`../assets/${item.source}`)" :height="150"
-                                                :lazy-src="require(`../assets/${item.source}`)" class="rounded-lg">
-                                                <h2 class="font-weight-medium grey--text">
+                                    <v-img :src="require(`../assets/${item.source}`)"
+                                        :width="settings.defaultImageSmallContentWidth"
+                                        :height="settings.defaultImageSmallContentHeight"
+                                        :lazy-src="require(`../assets/${item.source}`)" class="grey darken-4 rounded-lg">
+                                        <template v-slot:placeholder>
+                                            <v-row class="fill-height ma-0" align="center" justify="center">
+                                                <v-progress-circular indeterminate color="grey lighten-5">
+                                                </v-progress-circular>
+                                            </v-row>
+                                        </template>
 
-                                                    <v-chip class="ma-2" dark :color="settings.color">
-                                                        <v-icon>
-                                                            mdi-bell
-                                                        </v-icon> {{ item.date }}
-                                                    </v-chip>
-                                                </h2>
-                                            </v-img>
-                                            <div class="mt-2">
-                                                <div class="subheading font-weight-medium">
-                                                    {{ item.title }}
-                                                </div>
-                                                <h5 class="float-left font-weight-regular my-2">
-                                                    <v-chip class="ma-2" small outlined :color="settings.color">
-                                                        {{ item.category }}
-                                                    </v-chip> {{ item.date }}
-                                                </h5>
-                                            </div>
-                                            <h2 class="font-weight-medium grey--text">
-                                                <v-icon class="grey--text">
-                                                    mdi-bell
-                                                </v-icon> {{ item.date }}
-                                            </h2>
+                                        <v-chip class="ma-2" dark :color="settings.color">
+                                            <v-icon>
+                                                mdi-bell
+                                            </v-icon> {{ item.date }}
+                                        </v-chip>
 
-                                        </div>
-                                        <div class="subheading font-weight-medium mt-1">
+                                    </v-img>
+                                    <div class="mt-3 ml-3">
+                                        <div class="subheading font-weight-medium">
                                             {{ item.title }}
                                         </div>
                                         <h5 class="float-left font-weight-regular my-2">
@@ -148,7 +125,7 @@
                                                 {{ item.category }}
                                             </v-chip> {{ item.datePublish }}
                                         </h5>
-                                    </v-flex>
+                                    </div>
                                 </v-layout>
                             </v-container>
                         </v-card>
@@ -162,7 +139,6 @@
             </v-alert>
         </v-col>
     </div>
-
 </template>
 
 <script>

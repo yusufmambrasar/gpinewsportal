@@ -33,11 +33,13 @@
     <v-row class="my-5" v-else>
         <v-col lg="6">
             <h1 class="font-weight-regular" :color="color">Selamat Datang di <br> GPI "Jalan Suci" Indonesia</h1>
-            <p class="description" :color="color">“Di situ akan ada jalan raya, yang akan disebutkan Jalan Kudus” Yesaya 35:8
-                Kehidupan Kekristenan dan pelayanan tidak pernah menonjol melebihi standar dan nilai  ibadah kami. Kehidupan dan pelayanan rohani kami dilakukan, 
+            <p class="description" :color="color">“Di situ akan ada jalan raya, yang akan disebutkan Jalan Kudus” Yesaya
+                35:8
+                Kehidupan Kekristenan dan pelayanan tidak pernah menonjol melebihi standar dan nilai ibadah kami.
+                Kehidupan dan pelayanan rohani kami dilakukan,
                 dan dimulai dari hadirat Allah.
             </p>
-            
+
             <v-btn to="profil" small :color="settings.color" class="my-4" rounded outlined>
                 Profil <v-icon> mdi-chevron-right</v-icon>
 

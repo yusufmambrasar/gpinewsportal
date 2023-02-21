@@ -7,7 +7,7 @@
       <v-carousel-item v-for="(item, i) in items" :key="i" :src="require(`../assets/${item.source}`)"
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.6)">
         <v-row class="fill-height" align="center" justify="center">
-          <v-col class="ml-15">
+          <v-col class="ml-5">
             <router-link :to="'/informasi/detail/' + item.slugTitle" class="text-decoration-none">
               <v-chip class="ma-2" close :color="settings.color" dark>
                 {{ item.category }}

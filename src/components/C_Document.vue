@@ -19,8 +19,8 @@
                 <v-container fluid grid-list-lg>
                   <v-layout row>
                     <v-img :height="settings.defaultImageSmallContentHeight" :src="require(`../assets/${items.source}`)"
-                      :alt="items.title" :lazy-src="require(`../assets/${items.source}`)"
-                      class="grey darken-4 rounded-lg" :width="settings.defaultImageSmallContentWidth">
+                      :alt="items.title" :lazy-src="require(`../assets/${items.source}`)" class="grey darken-4 rounded-lg"
+                      :width="settings.defaultImageSmallContentWidth">
                       <template v-slot:placeholder>
                         <v-row class="fill-height ma-0" align="center" justify="center">
                           <v-progress-circular indeterminate color="grey lighten-5">
@@ -82,33 +82,41 @@
     <SearchingModal @searchData="getCategoryBySlug" />
     <v-row>
 
-      <v-col md="12" v-for="item in documentsData">
+      <v-col md="12" v-for="items in documentsData">
         <v-flex xs12>
           <v-hover v-slot="{ hover }" open-delay="200">
-            <router-link :to="'/informasi/detail/' + item.slugTitle" class="text-decoration-none">
-              <v-card :elevation="hover ? 5 : 1" :class="{ 'on-hover': hover }">
-                <v-container fluid grid-list-lg>
-                  <v-layout row>
-                    <v-flex xs5>
+            <router-link :to="'/informasi/detail/' + items.subtitle" class="text-decoration-none">
+              <v-hover v-slot="{ hover }" open-delay="200">
 
-                      <v-img src="../assets/lahai5.jpeg" class="rounded-lg">
+                <v-card :elevation="hover ? 5 : 1" :class="{ 'on-hover': hover }">
+                  <v-container fluid grid-list-lg>
+                    <v-layout row>
+                      <v-img :height="settings.defaultImageSmallContentHeight" :src="require(`../assets/${items.source}`)"
+                        :alt="items.title" :lazy-src="require(`../assets/${items.source}`)"
+                        class="grey darken-4 rounded-lg" :width="settings.defaultImageSmallContentWidth">
+                        <template v-slot:placeholder>
+                          <v-row class="fill-height ma-0" align="center" justify="center">
+                            <v-progress-circular indeterminate color="grey lighten-5">
+                            </v-progress-circular>
+                          </v-row>
+                        </template>
                       </v-img>
-                    </v-flex>
-                    <v-flex xs7>
+
                       <div>
-                        <div class="subheading font-weight-medium">
-                          {{ item.title }}
+                        <div class="subheading font-weight-medium mt-3 ml-3">
+                          <p v-html="items.title"></p>
                         </div>
                         <h5 class="float-left font-weight-regular my-2">
                           <v-chip class="ma-2" small outlined :color="settings.color">
                             <v-icon> mdi-download </v-icon> Download
-                          </v-chip> 20 Des 2022
+                          </v-chip> {{ items.date }}
                         </h5>
                       </div>
-                    </v-flex>
-                  </v-layout>
-                </v-container>
-              </v-card>
+                    </v-layout>
+                  </v-container>
+                </v-card>
+
+              </v-hover>
             </router-link>
           </v-hover>
         </v-flex>
@@ -204,7 +212,7 @@ export default {
           title: "Jumlah jemaat GPI Jalan Suci  di indonesia",
           date: "20 Jan 2023",
           source: "datajemaat.jpg"
-        }, 
+        },
         {
           id: "2345",
           category: "Api Menyala",
@@ -213,7 +221,7 @@ export default {
           title: "Buku dan majalah api menyala dari  ",
           date: "25 Jan 2023",
           source: "majalahapimenyala.png"
-        }, 
+        },
         {
           id: "2345",
           category: "Rakornas",
@@ -222,7 +230,7 @@ export default {
           title: "hasil-rakernas-tahun-2022",
           date: "20 Sep 2022",
           source: "dokument6.jpg"
-        }, 
+        },
         {
           id: "2345",
           category: "Sinode",
@@ -231,7 +239,7 @@ export default {
           title: "Dokument tanda masuk dalam anggota PGPI",
           date: "25 Jan 2020",
           source: "dokumentkeanggotaan.jpg"
-        }, 
+        },
         {
           id: "2345",
           category: "Misi",
@@ -240,7 +248,7 @@ export default {
           title: "bahan ajar penginjilan GPI JS",
           date: "25 Jan 2020",
           source: "bukudanmajalah.jpg"
-        }, 
+        },
         {
           id: "2345",
           category: "Persidangan Ilahi",

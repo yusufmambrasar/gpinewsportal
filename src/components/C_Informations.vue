@@ -82,32 +82,36 @@
         <SearchingModal @searchData="getCategoryBySlug" />
         <v-col cols="12">
             <v-row>
-                <v-col md="4" v-show="isShowNews" v-for="item in infoData">
+                <v-col md="4" v-show="isShowNews" v-for="items in infoData">
                     <v-flex xs12>
                         <v-hover v-slot="{ hover }" open-delay="200">
-                            <router-link :to="'/informasi/detail/' + item.slugTitle" class="text-decoration-none">
+                            <router-link :to="'/informasi/detail/' + items.slugTitle" class="text-decoration-none">
                                 <v-card :elevation="hover ? 5 : 1" :class="{ 'on-hover': hover }">
                                     <v-container fluid grid-list-lg>
                                         <v-layout row>
-                                            <v-flex xs5>
+                                            <v-img :height="settings.defaultImageSmallContentHeight"
+                                                :src="require(`../assets/${items.source}`)" :alt="items.title"
+                                                :lazy-src="require(`../assets/${items.source}`)"
+                                                class="grey darken-4 rounded-lg"
+                                                :width="settings.defaultitemsSmallContentWidth">
+                                                <template v-slot:placeholder>
+                                                    <v-row class="fill-height ma-0" align="center" justify="center">
+                                                        <v-progress-circular indeterminate color="grey lighten-5">
+                                                        </v-progress-circular>
+                                                    </v-row>
+                                                </template>
+                                            </v-img>
 
-                                                <v-img src="../assets/lahai5.jpeg" width="300"
-                                                    :height="settings.defaultImageSmallContentHeight"
-                                                    class="rounded-lg">
-                                                </v-img>
-                                            </v-flex>
-                                            <v-flex xs7>
-                                                <div>
-                                                    <div class="subheading font-weight-medium">
-                                                        {{ item.title }}
-                                                    </div>
-                                                    <h5 class="float-left font-weight-regular my-2">
-                                                        <v-chip class="ma-2" small outlined :color="settings.color">
-                                                            {{ item.category }}
-                                                        </v-chip> {{ item.date }}
-                                                    </h5>
+                                            <div>
+                                                <div class="subheading font-weight-medium mt-3 ml-3">
+                                                    {{ items.title }}
                                                 </div>
-                                            </v-flex>
+                                                <h5 class="float-left font-weight-regular my-2">
+                                                    <v-chip class="ma-2" small outlined :color="settings.color">
+                                                        {{ items.category }}
+                                                    </v-chip> {{ items.date }}
+                                                </h5>
+                                            </div>
                                         </v-layout>
                                     </v-container>
                                 </v-card>

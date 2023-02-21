@@ -54,9 +54,9 @@
           <span>Info</span>
           <v-icon>mdi-newspaper-variant-multiple</v-icon>
         </v-btn>
-        <v-btn to="/jadwal">
-          <span>Ibadah</span>
-          <v-icon>mdi-book-open-variant</v-icon>
+        <v-btn to="/cabang">
+          <span>Cabang</span>
+          <v-icon>mdi-map-marker-outline</v-icon>
         </v-btn>
 
       </v-bottom-navigation>

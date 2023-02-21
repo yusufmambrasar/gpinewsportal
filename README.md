@@ -1,4 +1,4 @@
-# my-app
+# GPI JS News Portal
 
 ## Project setup
 ```
@@ -24,3 +24,6 @@ https://www.npmjs.com/package/vue-pwa-asset-generator
 
 ### Routing .htaccess 
 https://stackoverflow.com/questions/36399319/vue-router-return-404-when-revisit-to-the-url
+
+### Github GPI Jalan suci Dev
+https://github.com/novalsmith/gpinewsportal

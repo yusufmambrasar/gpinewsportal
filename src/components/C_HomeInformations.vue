@@ -25,8 +25,7 @@
                                         <v-container fluid grid-list-lg>
                                             <v-layout row>
                                                 <v-img :src="require(`../assets/${item.source}`)"
-                                                    :height="settings.defaultImageSmallContentHeight"
-                                                    class="rounded-lg">
+                                                    :height="settings.defaultImageSmallContentHeight" class="rounded-lg">
                                                 </v-img>
                                                 <div class="mt-2">
                                                     <div class="subheading font-weight-medium">
@@ -70,8 +69,8 @@ export default {
                 id: "23453",
                 category: "Misi",
                 slugCategory: "misi",
-                slugTitle: "misi",
-                title: "Penginjilan di tempat baru, 2021",
+                slugTitle: "rakornas-lawang",
+                title: "RAKORNAS GPI 'Jalan Suci' 2023 di Lawang",
                 date: "5 Menit yang lalu",
                 source: "penginjilan.jpg"
             },

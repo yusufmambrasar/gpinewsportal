@@ -147,8 +147,8 @@ export default defineComponent({
                 id: "23453",
                 category: "Misi",
                 slugCategory: "misi",
-                slugTitle: "misi",
-                title: "Penginjilan di tempat baru, 2021",
+                slugTitle: "rakornas-lawang",
+                title: "RAKORNAS GPI 'Jalan Suci' 2023 di Lawang",
                 date: "5 Menit yang lalu",
                 source: "penginjilan.jpg"
             },

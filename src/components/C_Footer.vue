@@ -40,7 +40,7 @@
           </div>
         </v-list>
       </v-navigation-drawer>
-      <v-bottom-navigation fixed :color="settings.color" height="60" style="position: fixed; z-index: 999;">
+      <v-bottom-navigation fixed :color="settings.color" height="70" style="position: fixed; z-index: 999;">
         <v-btn to="/">
           <span>Home</span>
           <v-icon>mdi-home</v-icon>

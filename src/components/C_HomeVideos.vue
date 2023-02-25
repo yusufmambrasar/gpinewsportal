@@ -1,82 +1,77 @@
 <template >
-    <div>
+    <v-container>
+        <v-row>
+            <v-col md="6">
+                <h3 class="font-weight-regular">
+                    <v-icon>
+                        mdi-video
+                    </v-icon>
+                    Video
+                </h3>
+            </v-col>
+            <v-col md="6">
+                <v-btn v-show="isShowVideo" small text :color="settings.color" class="white-text float-right"
+                    to="/media/video">
+                    Semua <v-icon> mdi-chevron-right</v-icon>
+                </v-btn>
+            </v-col>
+        </v-row>
 
-        <v-col md="12">
-            <v-row>
-                <v-col md="6">
-                    <h3 class="font-weight-regular">
-                        <v-icon>
-                            mdi-video
-                        </v-icon>
-                        Video
-                    </h3>
-                </v-col>
-                <v-col md="6">
-                    <v-btn v-show="isShowVideo" small text :color="settings.color" class="white-text float-right"
-                        to="/media/video">
-                        Semua <v-icon> mdi-chevron-right</v-icon>
-                    </v-btn>
-                </v-col>
-            </v-row>
-        </v-col>
-        <v-col md="12">
-            <v-row v-if="settings.screenSize.type.ismd || settings.screenSize.type.islg">
-                <v-col md="4" v-for="item in listData">
-                    <v-flex xs12>
-                        <v-hover v-slot="{ hover }" open-delay="200">
-                            <v-card :elevation="hover ? 5 : 1" :class="{ 'on-hover': hover }">
-                                <v-container fluid grid-list-lg>
-                                    <v-layout row>
-                                        <LazyYoutube width="100%" :src="`https://www.youtube.com/embed/`+item.ytlink"/>
-                                        <div>
-                                            <div class="subheading font-weight-medium mt-3 ml-3">
-                                                Ibadah
-                                            </div>
-                                            <h5 class="float-left font-weight-regular my-2">
-                                                <v-chip class="ma-2" small outlined :color="settings.color">
-                                                    Ibadah Raya 
-                                                </v-chip> 29 Jan 2022
-                                            </h5>
-                                        </div>
-                                    </v-layout>
-                                </v-container>
-                            </v-card>
-                        </v-hover>
-                    </v-flex>
-                </v-col>
-            </v-row>
-            <div v-else>
-                <v-col v-show="isShowVideo" v-for="{ item, i } in listData" :color="settings.color" :key="i">
+        <v-row v-if="settings.screenSize.type.ismd || settings.screenSize.type.islg">
+            <v-col md="4" v-for="item in listData">
+                <v-flex xs12>
                     <v-hover v-slot="{ hover }" open-delay="200">
-                        <v-card :elevation="hover ? 18 : 1" :class="{ 'on-hover': hover }">
-                            <LazyYoutube width="100%" src="https://www.youtube.com/embed/nmMFYNMWQwU"/>
-                            <v-row>
-                                <v-col md="6">
-                                    <v-chip class="mx-5 my-5" small outlined :color="settings.color"
-                                        :to="'/media/video'">
-                                        Ibadah Paskah
-                                    </v-chip>
-                                </v-col>
-                                <v-col md="6">
-                                    <v-card-subtitle class="float-right">
-                                        4 April 2022
-                                    </v-card-subtitle>
-                                </v-col>
-                            </v-row>
-                            <v-divider class="mx-5"></v-divider>
-                            <v-card-title class="font-weight-regular">Ibadah Paskah</v-card-title>
+                        <v-card :elevation="hover ? 5 : 1" :class="{ 'on-hover': hover }">
+                            <v-container fluid grid-list-lg>
+                                <v-layout row>
+                                    <LazyYoutube width="100%" :src="`https://www.youtube.com/embed/` + item.ytlink" />
+                                    <div>
+                                        <div class="subheading font-weight-medium mt-3 ml-3">
+                                            Ibadah
+                                        </div>
+                                        <h5 class="float-left font-weight-regular my-2">
+                                            <v-chip class="ma-2" small outlined :color="settings.color">
+                                                Ibadah Raya
+                                            </v-chip> 29 Jan 2022
+                                        </h5>
+                                    </div>
+                                </v-layout>
+                            </v-container>
                         </v-card>
                     </v-hover>
-                </v-col>
-            </div>
-        </v-col>
+                </v-flex>
+            </v-col>
+        </v-row>
+        <div v-else>
+            <v-col v-show="isShowVideo" v-for="item in listData" :color="settings.color">
+                <v-hover v-slot="{ hover }" open-delay="200">
+                    <v-card :elevation="hover ? 5 : 1" :class="{ 'on-hover': hover }">
+                        <v-container fluid grid-list-lg>
+                            <v-layout row>
+                                <LazyYoutube width="100%" :src="`https://www.youtube.com/embed/` + item.ytlink" />
+                                <div>
+                                    <div class="subheading font-weight-medium mt-3 ml-3">
+                                        Ibadah
+                                    </div>
+                                    <h5 class="float-left font-weight-regular my-2">
+                                        <v-chip class="ma-2" small outlined :color="settings.color">
+                                            Ibadah Raya
+                                        </v-chip> 29 Jan 2022
+                                    </h5>
+                                </div>
+                            </v-layout>
+                        </v-container>
+                    </v-card>
+                </v-hover>
+            </v-col>
+        </div>
+
         <v-col md="12" v-show="isShowVideo == false">
             <v-alert :color="settings.color + ' lighten-5'" icon="mdi-information-outline" dense>
                 Sementara belum ada video
             </v-alert>
         </v-col>
-
-    </div>
+    </v-container>
 </template>
 
 <script>
@@ -104,13 +99,13 @@ export default {
                 },
                 {
                     ytlink: "odAMktTGQp8"
-                }, 
+                },
                 {
                     ytlink: "3RXChLXh8Ww"
                 },
                 {
                     ytlink: "zVN2I5iq6GM"
-                }, 
+                },
                 {
                     ytlink: "29Lx6TZ-jSk"
                 },
@@ -118,7 +113,7 @@ export default {
                     ytlink: "Gb5hwWRvcaU"
                 }
 
-                
+
             ]
         }
     },

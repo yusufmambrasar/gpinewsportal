@@ -1,9 +1,8 @@
 <template >
   <v-row>
     <v-col md="10" offset-md="1">
-      <v-img :src="require(`../assets/${rows.source}`)" :alt="rows.title"
-        :lazy-src="require(`../assets/${rows.source}`)" class="white--text align-end rounded-lg"
-        gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)" height="400px">
+      <v-img :src="require(`../assets/${rows.source}`)" :alt="rows.title" :lazy-src="require(`../assets/${rows.source}`)"
+        class="white--text align-end rounded-lg" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)" height="400px">
         <template v-slot:placeholder>
           <v-row class="fill-height ma-0" align="center" justify="center">
             <v-progress-circular indeterminate color="grey lighten-5">
@@ -59,8 +58,8 @@ export default {
           id: "23453",
           category: "Misi",
           slugCategory: "misi",
-          slugTitle: "misi",
-          title: "Penginjilan di tempat baru, 2021",
+          slugTitle: "rakornas-lawang",
+          title: "RAKORNAS GPI 'Jalan Suci' 2023 di Lawang",
           date: "5 Menit yang lalu",
           source: "penginjilan.jpg",
           content:
@@ -92,11 +91,10 @@ export default {
           id: "2553",
           category: "Pelayanan",
           slugCategory: "pelayanan",
-          slugTitle: "Pelayanan Diakonia - kepada sesama saling mendoakan",
-          title: "pelayanan-diakonia-mendoakan-yang-sakit",
+          slugTitle: "pelayanan-diakonia-mendoakan-yang-sakit",
+          title: "Pelayanan Diakonia - kepada sesama saling mendoakan",
           date: "10 Jam yang lalu",
-          source: "pelayanandiakonia.jpg",
-          content: "Sample content 3"
+          source: "pelayanandiakonia.jpg"
         },
         {
           id: "23499",
